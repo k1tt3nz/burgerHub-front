@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+}
+
+.layout {
+    display: flex;
+    height: 100vh;
+}
+
+
+.sidebar {
+    font-family: 'Pusia Bold', sans-serif;
+    width: 30vh;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.sidebar ul {
+    font-family: 'Pusia Bold', sans-serif;
+    margin-top: 0;
+    margin-bottom: 20px;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar li {
+    font-family: 'Pusia Bold', sans-serif;
+    padding: 10px;
+    background-color: #FF8000;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar li:hover {
+    background-color: #d0d0d0;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+}
+
+.filters input,
+.filters select,
+.filters button {
+    padding: 8px;
+    font-size: 14px;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.data-table th,
+.data-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.data-table th {
+    background-color: #f9f9f9;
+}
+
+body.admin-panel-page header,
+body.admin-panel-page footer {
+    display: none !important;
+}
+
+.title{
+    text-align: center;
+}
+
+.sidebar h1 {
+    color: #FF8000;
+}

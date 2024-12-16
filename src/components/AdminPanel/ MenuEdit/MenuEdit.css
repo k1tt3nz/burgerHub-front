@@ -1,0 +1,65 @@
+/* Основной контейнер для таблиц */
+.menu-edit-container {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Заголовки категорий */
+h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Стили для таблиц */
+.menu-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+/* Стили для заголовков таблиц */
+.menu-table th {
+    padding: 12px 15px;
+    background-color: #FF8000;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #ddd;
+}
+
+/* Стили для ячеек */
+.menu-table td {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    vertical-align: middle;
+}
+
+/* Полосы для чередующихся строк */
+.menu-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* При наведении на строку таблицы */
+.menu-table tr:hover {
+    background-color: #ddd;
+    cursor: pointer; /* Указатель на строке при наведении */
+}
+
+/* Стиль для пустых ячеек (если вдруг такие будут) */
+.menu-table td:empty {
+    background-color: #e6e6e6;
+}
+
+/* Подсветка строк при клике */
+.menu-table tr.clicked {
+    background-color: #FF8000;
+}
+
+/* Убираем подсветку при клике, если строка уже выбрана */
+.menu-table tr.clicked:hover {
+    background-color: #FF8000;
+}
